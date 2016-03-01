@@ -5,6 +5,7 @@ class CreateLocations < ActiveRecord::Migration
       t.string :description
       t.string :tag
       t.string :coordinates
+      t.belongs_to :user, index: true
     end
   end
 end
